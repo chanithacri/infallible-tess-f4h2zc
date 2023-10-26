@@ -1,16 +1,6 @@
 import re
 
-# Define the regular expression pattern
-template = r"(\d{1,2})([./])(\d{1,2})\2(\d{4})"
-# Read input from the user
 string = input()
-# Attempt to find the pattern
-match = re.search(template, string)
-a, b, c = string.split()
-# Check if a match was found
-if len(a) <= 2 and len(b) <= 2 and len(c) == 4:
-    if match is not None:
-        # Print the year (group 4)
-        print(match.group(4))
-else:
-    print("None")
+dates = re.compile("([1-9]|[12][0-9]|3[01])(/)([1-9]|1[012])(/)(19|20)\d\d")
+result = dates.match(string)
+print(result)
