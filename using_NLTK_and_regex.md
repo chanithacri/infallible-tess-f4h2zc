@@ -12,4 +12,9 @@ Similarity: Measure similarity between texts using metrics like cosine similarit
 Generation: Build language generators for tasks like machine translation, summarization, question answering etc.
 So in summary, NLTK provides a comprehensive suite of tools for common NLP tasks like preprocessing, classification, parsing etc. that can help with text analysis and language processing in Python.
 ## Using regex
-
+The re module in Python is used for working with regular expressions. Regular expressions are a sequence of characters that form a search pattern. They can be used to check if a string contains the specified search pattern, find all occurrences of a pattern in a string, replace a pattern, etc. Here are some common functions in the re module:
+re.search(pattern, string): Searches the string for a match, and returns the first match object found.
+re.findall(pattern, string): Returns a list of all matches.
+re\\.compile(pattern): Compiles a regular expression pattern into a regular expression object, which can be used for matching using its methods like search(), match(), findall(), split() etc.
+re.sub(pattern, repl, string): Replaces all occurrences of the pattern in the string with the replacement string repl.
+re.split(pattern, string): Splits the string by the occurrences of the pattern.
